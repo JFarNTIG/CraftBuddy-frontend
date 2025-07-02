@@ -9,15 +9,15 @@ CraftBuddy is a web app that can help with a variety of crafting and resource ma
 This project contains the frontend service of the CraftBuddy app. The frontend service is built with Vite + React and uses the Mantine component library.
 
 The CraftBuddy project consists of the following repositories:
-* [craftbuddy-frontend](https://github.com/JFarNTIG/craftbuddy-frontend), frontend server built with React + Vite.
-* [craftbuddy-backend](https://github.com/JFarNTIG/craftbuddy-backend), backend API server built with Flask.
-* [craftbuddy](https://github.com/JFarNTIG/craftbuddy), environment and docker compose script for deploying the CraftBuddy app
+* [CraftBuddy-frontend](https://github.com/JFarNTIG/CraftBuddy-frontend), frontend server built with React + Vite.
+* [CraftBuddy-backend](https://github.com/JFarNTIG/CraftBuddy-backend), backend API server built with Flask.
+* [CraftBuddy](https://github.com/JFarNTIG/CraftBuddy), environment and docker compose script for deploying the CraftBuddy app
 
 CraftBuddy also depends on [crafterlib](https://github.com/JFarNTIG/crafterlib), a Python library that provides game item and recipe data and has a variety of functions for crafting-related math.
 
 ## Getting Started
 
-If you want to deploy the CraftBuddy app, then it's recommended to do so via the docker compose script. See the instructions in [the main CraftBuddy repository](https://github.com/JFarNTIG/craftbuddy).
+If you want to deploy the CraftBuddy app, then it's recommended to do so via the docker compose script. See the instructions in [the main CraftBuddy repository](https://github.com/JFarNTIG/CraftBuddy).
 
 Otherwise, follow the instructions below to create a development environment for the frontend service.
 
@@ -25,7 +25,7 @@ Otherwise, follow the instructions below to create a development environment for
 
 Clone the repository:
 ```
-git clone https://github.com/JFarNTIG/craftbuddy-frontend frontend && cd frontend
+git clone https://github.com/JFarNTIG/CraftBuddy-frontend frontend && cd frontend
 ```
 
 Install dependencies:
