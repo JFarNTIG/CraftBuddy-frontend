@@ -97,4 +97,79 @@ export const handlers = [
       }});
     }
   }),
+  http.get<{ game_id: string }>('/api/games/:game_id/craftingGrid', () => {
+    return HttpResponse.json(
+      [
+        {
+        "id": 1,
+        "products": {
+            "Item 1": 1
+        },
+        "crafting_coordinates": {
+            "A1": "Item 3",
+            "A2": "Item 3",
+            "A3": "Item 3",
+            "B1": "Item 3",
+            "B2": "",
+            "B3": "Item 3",
+            "C1": "Item 3",
+            "C2": "Item 3",
+            "C3": "Item 3"
+        }
+      },
+      {
+        "id": 2,
+        "products": {
+            "Item 2": 1
+        },
+        "crafting_coordinates": {
+            "A1": "",
+            "A2": "",
+            "A3": "",
+            "B1": "Item 1",
+            "B2": "Item 1",
+            "B3": "",
+            "C1": "Item 1",
+            "C2": "Item 1",
+            "C3": ""
+        }}]);
+  }),
+  
+  http.get<{ game_id: string }>('/api/games/:game_id/items/:item_id/craftingGrid', () => {
+    return HttpResponse.json(
+      [
+        {
+        "id": 1,
+        "products": {
+            "Item 1": 1
+        },
+        "crafting_coordinates": {
+            "A1": "Item 3",
+            "A2": "Item 3",
+            "A3": "Item 3",
+            "B1": "Item 3",
+            "B2": "",
+            "B3": "Item 3",
+            "C1": "Item 3",
+            "C2": "Item 3",
+            "C3": "Item 3"
+        }
+      },
+      {
+        "id": 2,
+        "products": {
+            "Item 2": 1
+        },
+        "crafting_coordinates": {
+            "A1": "",
+            "A2": "",
+            "A3": "",
+            "B1": "Item 1",
+            "B2": "Item 1",
+            "B3": "",
+            "C1": "Item 1",
+            "C2": "Item 1",
+            "C3": ""
+        }}]);
+  }),
 ]
